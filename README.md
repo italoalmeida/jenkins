@@ -1,3 +1,5 @@
-# jenkins-docker
+# jenkins
 
-Jenkins with Docker client
+Custom Jenkins Dockerfile
+- Docker client
+- Java JDK 15
