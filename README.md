@@ -1,5 +1,4 @@
-# jenkins
+# Custom Jenkins Dockerfile
 
-Custom Jenkins Dockerfile
-- Docker client
 - Java JDK 15
+- Docker client
