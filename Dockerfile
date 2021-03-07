@@ -4,8 +4,7 @@ USER root
 
 # Download and install JDK 15
 RUN mkdir -p /usr/lib/jvm && \
- curl -L https://download.oracle.com/otn-pub/java/jdk/15.0.2+7/0d1cfde4252546c6931946de8db48ee2/jdk-15.0.2_linux-x64_bin.tar.gz | tar -xz -C /usr/lib/jvm && \
- rm -rf /usr/lib/jvm/jdk-15.0.2_linux-x64_bin.tar.gz
+ curl -L https://download.oracle.com/otn-pub/java/jdk/15.0.2+7/0d1cfde4252546c6931946de8db48ee2/jdk-15.0.2_linux-x64_bin.tar.gz | tar -xz -C /usr/lib/jvm
 
 # Download and install Docker
 RUN mkdir -p /tmp/download && \
