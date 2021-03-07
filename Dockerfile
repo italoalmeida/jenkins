@@ -7,6 +7,8 @@ RUN mkdir -p /usr/lib/jvm && \
  wget --no-check-certificate -c --header "Cookie: oraclelicense=accept-securebackup-cookie" https://download.oracle.com/otn-pub/java/jdk/15.0.2+7/0d1cfde4252546c6931946de8db48ee2/jdk-15.0.2_linux-x64_bin.tar.gz -P /usr/lib/jvm && \
  tar -xvzf /usr/lib/jvm/jdk-15.0.2_linux-x64_bin.tar.gz -C /usr/lib/jvm && \
  rm -rf /usr/lib/jvm/jdk-15.0.2_linux-x64_bin.tar.gz
+ 
+ENV JAVA_HOME /usr/lib/jvm/jdk-15.0.2
 
 # Download and install Docker
 RUN mkdir -p /tmp/download && \
