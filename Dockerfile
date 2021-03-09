@@ -12,7 +12,7 @@ ENV JAVA_HOME /usr/lib/jvm/jdk-15.0.2
 
 # Download and install Docker
 RUN mkdir -p /tmp/download && \
- curl -# -L https://download.docker.com/linux/static/stable/x86_64/docker-20.10.5.tgz | tar -xz -C /tmp/download && \
+ curl -s -L https://download.docker.com/linux/static/stable/x86_64/docker-20.10.5.tgz | tar -xz -C /tmp/download && \
  rm -rf /tmp/download/docker/dockerd && \
  mv /tmp/download/docker/docker* /usr/local/bin/ && \
  rm -rf /tmp/download
