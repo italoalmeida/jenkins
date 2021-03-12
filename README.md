@@ -1,4 +1,5 @@
 # Jenkins Dockerfile
 
-- Java JDK 15
-- Docker client
+- JDK 15
+- Docker CLI
+- Heroku CLI
