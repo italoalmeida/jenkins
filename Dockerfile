@@ -24,7 +24,8 @@ RUN curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
 
 ENV HEROKU_HOME /usr/bin
 
-RUN groupadd -g 999 docker,heroku && \
+RUN groupadd -g 999 docker && \
+ groupadd -g 999 heroku && \
  usermod -aG docker,heroku jenkins
 
 USER jenkins
